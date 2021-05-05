@@ -1,7 +1,9 @@
-### flask-crud-example
+## flask-crud-example
 
-<img src="./preview.png" width="100%">
-## Running
+<img src="./preview.png" width="80%">
+
+
+### Running
 
 ```
 docker run -p 34567:34567 mengpeilee/flask-crud:v1.0.0
