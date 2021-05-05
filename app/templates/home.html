@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <h1>Add Titles</h1>
+    <form method="POST" action="/">
+      <input type="text" name="title" />
+      <input type="submit" value="Add" />
+    </form>
+
+    <h1>Hello Worlds!</h1>
+    <table>
+      {% for data in titles %}
+      <tr>
+        <td>
+          {{data.title}}
+        </td>
+        <td>
+          <form method="POST" action="./update" style="display: inline">
+            <input type="hidden" value="{{data.title}}" name="oldtitle" />
+            <input type="text" value="{{data.title}}" name="newtitle" />
+            <input type="submit" value="Update" />
+          </form>
+        </td>
+        <td>
+          <form method="POST" action="./delete" style="display: inline">
+            <input type="hidden" value="{{data.title}}" name="title" />
+            <input type="submit" value="Delete" />
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
