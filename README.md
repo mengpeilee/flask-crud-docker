@@ -1,5 +1,6 @@
 ### flask-crud-example
 
+<img src="./preview.png" width="100%">
 ## Running
 
 ```
